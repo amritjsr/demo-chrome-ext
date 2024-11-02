@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Page Search",
+  "version": "0.0.1",
+  "author": "Amritendu Das",
+  "description": "This extension will help you to search in the page anything even if it is not visible",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    },
+    "default_title": "Page Search"
+  },
+  "permissions": ["activeTab", "storage", "scripting"],
+  "options_page": "options.html",
+    "background": {
+        "service_worker": "js/background.js"
+    }
+}
